@@ -55,7 +55,7 @@ def parse_args():
     parser.add_argument("--model_name", type=str, default='vit_base_patch16_224', help="Name of the model.")
     parser.add_argument("--batch_size", type=int, default=32, help="Batch size for training.")
     parser.add_argument("--epochs", type=int, default=100, help="Number of training epochs.")
-    parser.add_argument("--lr", type=float, default=1e-4, help="Learning rate.")
+    parser.add_argument("--lr", type=float, default=5e-5, help="Learning rate.")
     parser.add_argument("--use_scheduler", action='store_true', help="Use learning rate scheduler.")
     return parser.parse_args()
 
